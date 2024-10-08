@@ -1,7 +1,11 @@
 import logging
 import streamlit as st
 from monty_hall_game import simulate_games
+import os
 
+log_dir = '/app/logs'
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
 # Configurer le fichier de log
 logging.basicConfig(filename='/app/logs/monty_hall_app.log',
                     level=logging.INFO,
