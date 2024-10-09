@@ -1,6 +1,7 @@
 import logging
 import streamlit as st
 from monty_hall_game import simulate_games
+import os
 
 log_dir = './logs'
 if not os.path.exists(log_dir):
