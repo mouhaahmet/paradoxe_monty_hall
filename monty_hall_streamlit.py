@@ -3,7 +3,7 @@ import streamlit as st
 from monty_hall_game import simulate_games
 
 
-logging.basicConfig(filename='/app/logs/monty_hall_app.log',
+logging.basicConfig(filename='/logs/monty_hall_app.log',
                     level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
