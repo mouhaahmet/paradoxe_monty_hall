@@ -2,8 +2,11 @@ import logging
 import streamlit as st
 from monty_hall_game import simulate_games
 
+log_dir = './logs'
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
 
-logging.basicConfig(filename='/logs/monty_hall_app.log',
+logging.basicConfig(filename='./logs/monty_hall_app.log',
                     level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
