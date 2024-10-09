@@ -26,7 +26,7 @@ Après votre choix initial, une des portes avec une chèvre sera révélée, et 
 L'objectif de cette simulation est de voir si changer de porte ou rester sur votre choix initial vous donne une meilleure chance de gagner.
 """)
 
-n_games = st.slider("Combien de parties voulez-vous simuler ?", min_value=100, max_value=10000, step=100, value=1000)
+n_games = st.slider("Combien de parties voulez-vous simuler ?", min_value=1, max_value=10000, step=100, value=1000)
 
 
 change = st.radio("Voulez-vous changer de porte après la révélation ?", ("Oui", "Non"))
